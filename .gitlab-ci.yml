@@ -32,4 +32,3 @@ deploy:
     url: https://teste-ufscar.herokuapp.com
   only:
     - master
-  when: manual
