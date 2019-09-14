@@ -21,3 +21,15 @@ building:
   stage: build
   script:
     - mvn package
+
+deploy:
+  stage: deploy
+  script:
+    - git remote add heroku https://julierme2005:$HEROKU_KEY@git.heroku.com/teste-ufscar.git
+    - git push heorku master
+  enviroment:
+    name: producao
+    url: https://teste-ufscar.herokuapps.com
+  only:
+    - master
+  when: manual
