@@ -26,7 +26,7 @@ deploy:
   stage: deploy
   script:
     - git remote add heroku https://julierme2005:$HEROKU_KEY@git.heroku.com/teste-ufscar.git
-    - git push heroku master
+    - git push heroku -all
   environment:
     name: producao
     url: https://teste-ufscar.herokuapps.com
