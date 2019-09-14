@@ -21,6 +21,6 @@ unit-test:
     - mvn test
 
 building:
-  statge: build
+  stage: build
   script:
     - mvn package
