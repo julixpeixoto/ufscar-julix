@@ -29,7 +29,7 @@ deploy:
     - git push heroku -all
   environment:
     name: producao
-    url: https://teste-ufscar.herokuapps.com
+    url: https://teste-ufscar.herokuapp.com
   only:
     - master
   when: manual
