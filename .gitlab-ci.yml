@@ -7,10 +7,7 @@ stages:
   - artifact
   - deploy
 
-validate:
-  stage: validate
-
-codecheck:
+validar:
   stage: validate
   script:
     - mvn validate
